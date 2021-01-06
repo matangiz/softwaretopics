@@ -54,7 +54,6 @@
  originator(!) and so we can retry outside of the HTTP PUT request.
  
  **Queue:** `connector-channel-handle-async-response`
- Routing key: 
  _____
 ### *send-resource-to-device*
  **Description:** Send resource to a device
@@ -109,7 +108,7 @@ _____
  **Queue:** `deployment-service-account-limits`
 _____
 ## **Firmware Catalog**
-*Description*
+*Description* 
 
 ### **consumers**:
 
@@ -122,12 +121,12 @@ _____
 ### **consumers**:
 
 ### *start-campaign-message*
- **Description:**
+ **Description:** Description
  
  **Queue:** `deployment-service-apply-firmware-update`
  _____
 ### *stop-campaign-message*
- **Description:**
+ **Description:** Description
  
  **Queue:** `deployment-service-campaign-engine-stop-campaign`
  _____
@@ -135,7 +134,7 @@ _____
 ### **consumers**:
 
 ### *campaign-device-state*
- **Description:**
+ **Description:** Description
  
  **Queue:** `deployment-service-campaign-device-state`
 _____
@@ -143,7 +142,7 @@ _____
 ### **consumers**:
 
 ### *device-resource-manager*
- **Description:**
+ **Description:** Description
  
  **Queue:** `update-service-device-resource-manager`
  _____
@@ -151,7 +150,7 @@ _____
 ### **consumers**:
 
 ### *campaign-device-heartbeat*
- **Description:**
+ **Description:** Description
  
  **Queue:** `deployment-service-campaign-device-heartbeat`
 _____
