@@ -1,15 +1,15 @@
 
 # Update Service
 
-## Table of contents
+## Components List
 
 - [Connector Channel](#connector-channel)
-    * [consumers](#consumers)
+    * [Consumers](#Consumers)
         + [handle notification subscription](#handle-notification-subscription)
         + [handle async response](#handle-async-response)
         + [send_resource_to_device](#send-resource-to-device)        
 - [Deployment Service](#deployment-service)
-    * [consumers](#consumers)
+    * [Consumers](#Consumers)
         + [campaign manager](#campaign-manager)
         + [check manifest](#check-manifest)
         + [deleted manifest](#deleted-manifest)   
@@ -19,20 +19,20 @@
         + [update update campaign attributes](#update-update-campaign-attributes)
         + [account limit](#account-limit)        
 - [Firmware Catalog](#firmware-catalog)
-    * [consumers](#consumers)
+    * [Consumers](#Consumers)
         + [firmware account limit](#firmware-account-limit)
 - [Campaign Engine](#campaign-engine)
-    * [consumers](#consumers)
+    * [Consumers](#Consumers)
         + [start campaign Message](#start-campaign-message)
         + [stop campaign Message](#stop-campaign-message)
 - [Campaign Device State](#campaign-device-state)
-    * [consumers](#consumers)
+    * [Consumers](#Consumers)
         + [campaign device state](#campaign-device-state)
 - [Campaign Device Resource Manager](#campaign-device-resource-manager)
-    * [consumers](#consumers)
+    * [Consumers](#Consumers)
         + [device resource manager](#device-resource-manager)
 - [Campaign Device Heartbeat](#campaign-device-heartbeat)
-    * [consumers](#consumers)
+    * [Consumers](#Consumers)
         + [campaign device heartbeat](#campaign-device-heartbeat)
   
 
@@ -40,7 +40,7 @@
 ## **Connector Channel**
 *Description*
 
-### **consumers**:
+### **Consumers**:
 
 ### *handle-notification-subscription*
  **Description:** Handle notification subscription change
@@ -63,7 +63,7 @@
 ## **Deployment Service**
 *Description*
 
-### **consumers**:
+### **Consumers**:
 
 ### *campaign-manager*
  **Description:** Check campaigns for `state` and `when` fields, triggering an update event to start a campaign when ready.
@@ -110,7 +110,7 @@ _____
 ## **Firmware Catalog**
 *Description* 
 
-### **consumers**:
+### **Consumers**:
 
 ### *firmware-account-limit*
  **Description:** Process account_limit message that sets the firmware limits for the given account.
@@ -118,7 +118,7 @@ _____
  **Queue:** `firmware-account-limits`
  _____
 ## **Campaign Engine**
-### **consumers**:
+### **Consumers**:
 
 ### *start-campaign-message*
  **Description:** Description
@@ -131,7 +131,7 @@ _____
  **Queue:** `deployment-service-campaign-engine-stop-campaign`
  _____
 ## **Campaign Device State**
-### **consumers**:
+### **Consumers**:
 
 ### *campaign-device-state*
  **Description:** Description
@@ -139,7 +139,7 @@ _____
  **Queue:** `deployment-service-campaign-device-state`
 _____
 ## **Campaign Device Resource Manager**
-### **consumers**:
+### **Consumers**:
 
 ### *device-resource-manager*
  **Description:** Description
@@ -147,7 +147,7 @@ _____
  **Queue:** `update-service-device-resource-manager`
  _____
 ## **Campaign Device Heartbeat**
-### **consumers**:
+### **Consumers**:
 
 ### *campaign-device-heartbeat*
  **Description:** Description
