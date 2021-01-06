@@ -114,9 +114,9 @@
 ### **consumers**:
 
 ### *firmware-account-limit*
- **Description:**
+ **Description:** Process account_limit message that sets the firmware limits for the given account.
  
- **Queue:** 
+ **Queue:** `firmware-account-limits`
  
 ## **Campaign Engine**
 ### **consumers**:
@@ -124,12 +124,12 @@
 ### *start-campaign-message*
  **Description:**
  
- **Queue:** 
+ **Queue:** `deployment-service-apply-firmware-update`
  
 ### *stop-campaign-message*
  **Description:**
  
- **Queue:** 
+ **Queue:** `deployment-service-campaign-engine-stop-campaign`
  
 ## **Campaign Device State**
 ### **consumers**:
@@ -137,7 +137,7 @@
 ### *campaign-device-state*
  **Description:**
  
- **Queue:** 
+ **Queue:** `deployment-service-campaign-device-state`
 
 ## **Campaign Device Resource Manager**
 ### **consumers**:
@@ -145,7 +145,7 @@
 ### *device-resource-manager*
  **Description:**
  
- **Queue:** 
+ **Queue:** `update-service-device-resource-manager`
  
 ## **Campaign Device Heartbeat**
 ### **consumers**:
@@ -153,4 +153,4 @@
 ### *campaign-device-heartbeat*
  **Description:**
  
- **Queue:** 
+ **Queue:** `deployment-service-campaign-device-heartbeat`
