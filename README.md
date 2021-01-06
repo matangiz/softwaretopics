@@ -37,67 +37,87 @@
   
 
 
-## Connector Channel
+## **Connector Channel**
 *Description*
 
-### consumers:
-#### handle-notification-subscription
- text
-#### handle-async-response
-text
-#### send-resource-to-device
-text
+### **consumers**:
 
-## Deployment Service
-*Description*
-### consumers:
-#### campaign-manager
-Description
-#### check-manifest
-Description
-#### deleted-manifest
-Description
-#### device-updated
-Description
-#### log-manifest-sent-devices
-Description
-#### update-campaign-device-metadata
-Description
-#### update-update-campaign-attributes
-Description
-#### account-limit
+#### *handle-notification-subscription*
+ Handle notification subscription change
+ Queue: connector-channel-handle-notification-subscription
+ 
+#### *handle-async-response*
+  **Description**:Handle async responses from mDS.
+ Async ID may not have reached the cache by the time an async response is
+ received - mDS sometimes returns the response to the request before returning the ID of the request to the
+ originator(!) and so we can retry outside of the HTTP PUT request.
+ **Queue**: handle_async_response
+ Routing key: 
 
-## Firmware Catalog
+#### *send-resource-to-device*
+ Send resource to a device
+ Queue: connector-channel-send-manifest
+
+## **Deployment Service**
 *Description*
-### consumers:
-#### firmware-account-limit
+
+### **consumers**:
+
+#### *campaign-manager*
+Description
+
+#### *check-manifest*
+Description
+
+#### *deleted-manifest*
+Description
+
+#### *device-updated*
+Description
+
+#### *log-manifest-sent-devices*
+Description
+
+#### *update-campaign-device-metadata*
+Description
+
+#### *update-update-campaign-attributes*
+Description
+
+#### *account-limit*
+
+## **Firmware Catalog**
+*Description*
+
+### **consumers**:
+
+#### *firmware-account-limit*
  text
  
-## Campaign Engine
-### consumers:
-#### campaign-manager
+## **Campaign Engine**
+### **consumers**:
+
+#### *start-campaign-message*
 Description
 
-## Campaign Device State
-```text
-consumers:
-    ├── handle_notification_subscription
-    ├── handle_async_response
-    └── send_resource_to_device
-```
+#### *stop-campaign-message*
+Description
 
-## Campaign Device Resource Manager
-```text
-consumers:
-    ├── handle_notification_subscription
-    ├── handle_async_response
-    └── send_resource_to_device
-```
+## **Campaign Device State**
+### **consumers**:
 
-## Campaign Device Heartbeat
-```text
-consumers:
-    ├── handle_notification_subscription
-    ├── handle_async_response
-    └── send_resource_to_device
-```
+#### *campaign-device-state*
+Description
+
+## **Campaign Device Resource Manager**
+### **consumers**:
+
+#### *device-resource-manager*
+Description
+
+## **Campaign Device Heartbeat**
+### **consumers**:
+
+#### *campaign-device-heartbeat*
+Description
+
