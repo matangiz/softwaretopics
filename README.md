@@ -47,16 +47,17 @@
  Queue: connector-channel-handle-notification-subscription
  
 #### *handle-async-response*
-  **Description**:Handle async responses from mDS.
+  **Description:** Handle async responses from mDS.
  Async ID may not have reached the cache by the time an async response is
  received - mDS sometimes returns the response to the request before returning the ID of the request to the
  originator(!) and so we can retry outside of the HTTP PUT request.
- **Queue**: handle_async_response
+ 
+ **Queue:** handle_async_response
  Routing key: 
 
 #### *send-resource-to-device*
- Send resource to a device
- Queue: connector-channel-send-manifest
+ **Description:** Send resource to a device
+ **Queue:** connector-channel-send-manifest
 
 ## **Deployment Service**
 *Description*
@@ -64,25 +65,39 @@
 ### **consumers**:
 
 #### *campaign-manager*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 #### *check-manifest*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 #### *deleted-manifest*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 #### *device-updated*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 #### *log-manifest-sent-devices*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 #### *update-campaign-device-metadata*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 #### *update-update-campaign-attributes*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 #### *account-limit*
 
@@ -92,32 +107,43 @@ Description
 ### **consumers**:
 
 #### *firmware-account-limit*
- text
+ **Description:**
+ 
+ **Queue:** 
  
 ## **Campaign Engine**
 ### **consumers**:
 
 #### *start-campaign-message*
-Description
-
+ **Description:**
+ 
+ **Queue:** 
+ 
 #### *stop-campaign-message*
-Description
-
+ **Description:**
+ 
+ **Queue:** 
+ 
 ## **Campaign Device State**
 ### **consumers**:
 
 #### *campaign-device-state*
-Description
+ **Description:**
+ 
+ **Queue:** 
 
 ## **Campaign Device Resource Manager**
 ### **consumers**:
 
 #### *device-resource-manager*
-Description
-
+ **Description:**
+ 
+ **Queue:** 
+ 
 ## **Campaign Device Heartbeat**
 ### **consumers**:
 
 #### *campaign-device-heartbeat*
-Description
-
+ **Description:**
+ 
+ **Queue:** 
