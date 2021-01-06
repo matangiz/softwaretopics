@@ -38,7 +38,7 @@
 
 
 ## **Connector Channel**
-*Description*
+Connector channel component 
 
 ### **consumers**:
 
