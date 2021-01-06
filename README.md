@@ -1,7 +1,7 @@
 
 # Update Service
 
-## Components List
+## Component List
 
 - [Connector Channel](#connector-channel)
     * [Consumers](#Consumers)
